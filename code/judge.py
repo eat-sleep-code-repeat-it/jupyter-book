@@ -59,7 +59,10 @@ Agentic Workflow
 """
 ## Agentic Design
 ## Which pattern(s) did this use? Try updating this to add another Agentic design pattern
-
+""" These kinds of patterns - to send a task to multiple models, and evaluate results,
+are common where you need to improve the quality of your LLM response. This approach can be universally applied
+to business projects where accuracy is critical.
+"""            
 load_dotenv(override=True)
 
 openai_api_key = os.getenv('OPENAI_API_KEY')

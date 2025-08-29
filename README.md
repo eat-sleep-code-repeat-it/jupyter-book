@@ -10,6 +10,8 @@ uv venv
 .venv\Scripts\activate
 
 # Install dependencies 
+uv sync
+# or
 uv pip install -r requirements.txt
 
 # install jupyter in the active environment to register the kernel properly.
@@ -18,7 +20,7 @@ uv pip install jupyter ipykernel
 # Register the Kernel with Jupyter
 python -m ipykernel install --user --name=JupyterBook --display-name="Python (JupyterBook)"
 
-
+uv pip install langchain
 ```
 
 ## How to use
